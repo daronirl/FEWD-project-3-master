@@ -51,33 +51,78 @@ fieldset {
   
 }
 
+
 input,
 select,
 textarea {
-    width: 100%;
+    width:100%;
     padding: 18px 12px;
     margin: 8px 0 24px;
     background: #f4f7f8;
-    border: none;
+    border:none;
     
 }
+
+
+input:focus,
+textarea:focus {
+    background-color: #52bab3;
+    color: #fff;
+    
+}
+
 
 input[placeholder="Required"] {
     text-align: right;
 }
+
+input[id="zipcode"] {
+    display:flex;
+    width:60%;
+   
+}
+
+
+
+input[type="checkbox"] {
+    width:20px;
+    
+    
+}
+
+input[type="radio"] {
+    width:20px;
+    
+}
   
+
+textarea {
+   height: 120px;
+}
+
 
 .btn {
     width: 100%;
     background-color: #52bab3;
     color: #fff;
-    padding: 20px;
+    padding: 28px;
     border-radius: 4%;
     font-size: 1.5em;
+    border:none;
 }
 
 footer {
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    input[type="text"],
+    input[type="email"] {
+
+        width: 50%;
+    }
+    
 }
