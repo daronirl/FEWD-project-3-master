@@ -119,10 +119,42 @@ footer {
 
 
 @media (min-width: 768px) {
-    input[type="text"],
-    input[type="email"] {
-
-        width: 50%;
-    }
+  
+  input,
+  select,   
+  textarea {
+    display:flex;
+    width: 100%;
+    margin-left: auto;
     
+
+  }
+
+
+  input[type="text"],
+  input[type="email"],
+  input[id="phone"],
+  input[id="street"],
+  input[id="city"],
+  select[id="state"] {
+    width: 65%;
+    
+
+  }
+
+ input[type="checkbox"],
+ input[type="radio"] {
+     display:inline-block;
+ }
+    
+
+ input[id="zipcode"] {
+    width: 30%;
+    margin:0 auto;
+    
+
+ }
+
+
+
 }
