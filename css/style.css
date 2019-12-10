@@ -7,6 +7,7 @@ html, body {
     font-family: 'Merriweather', serif;
     margin:0;
     padding:0;
+    height: 100%;   
     
 
 }
@@ -21,7 +22,7 @@ header {
     
 }
 
-legend, .spn {
+legend {
     font-weight: bold;
     padding-top: 20px;
     padding-bottom: 28px;
@@ -51,6 +52,16 @@ fieldset {
   
 }
 
+.form-group {
+    display:flex;
+    flex-direction: column;
+}
+
+.field-group {
+    display:flex;
+    flex-direction: column;
+
+}
 
 input,
 select,
@@ -77,7 +88,6 @@ input[placeholder="Required"] {
 }
 
 input[id="zipcode"] {
-    display:flex;
     width:60%;
    
 }
@@ -120,15 +130,19 @@ footer {
 
 @media (min-width: 768px) {
   
-  input,
-  select,   
-  textarea {
-    display:flex;
-    width: 100%;
-    margin-left: auto;
+   input,
+   select,   
+   textarea {
+     margin-left: auto;
     
+} 
+ 
 
-  }
+
+.field-group {
+    flex-direction: row;
+    align-items: center;
+}
 
 
   input[type="text"],
@@ -137,24 +151,29 @@ footer {
   input[id="street"],
   input[id="city"],
   select[id="state"] {
-    width: 65%;
+    width: 70%;
     
 
   }
 
- input[type="checkbox"],
- input[type="radio"] {
-     display:inline-block;
- }
     
-
  input[id="zipcode"] {
     width: 30%;
-    margin:0 auto;
+    margin-right: 40%;
+    
+   
     
 
  }
 
+ .messagearea {
+    margin-left: 1.8%;
+    padding-bottom: 10px;
+ }
 
+ 
+
+
+ 
 
 }

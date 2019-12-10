@@ -23,53 +23,74 @@
   
     
     <form>
-        
+       
          <fieldset>
-            <legend><span class="spn">Contact Information</span></legend>
-            <label for="name">Full Name</label>
+               
+          <legend>Contact Information</legend>
+          <div class="form-group">
+          <div class="field-group">
+            <label for="name">Full Name</label><br>
             <input type="text" id="name" name="user_name" placeholder="Required">
+        </div>
 
-            <label for="mail">Email Address</label>
+         <div class="field-group">
+            <label for="mail">Email Address</label><br>
             <input type="email" id="mail" name="user_email" placeholder="Required">
+          </div>
 
+         <div class="field-group">
             <label for="phone">Phone Number</label>
             <input id="phone" name="user_number">
-            
+         </div>
+
+         <div class="field-group">
             <label for="street">Street Address</label>
             <input id="street" name="user_street">
+         </div>
 
+        <div class="field-group">
             <label for="city">City</label>
             <input id="city" name="user_city">
+         </div>
 
+                <div class="field-group">    
             <label for="state">State</label>
             <select id="state" name="user_state">
                 <option value="ca">California</option>
                 <option value="az">Arizona</option>
                 <option value="nv">Nevada</option>
             </select>
+            </div>
 
+
+            <div class="field-group">
             <label for="zipcode">Zip Code</label>
             <input id="zipcode" name="user_zip">
+            </div>
+            </div>
         </fieldset>
-  
+        
 
         <fieldset>
-            <legend><span class="spn">Newsletter</span></legend>
+            <legend>Newsletter</legend>
             
                 <p>Select the newsletters you would like to recieve</p>
-                <input type="checkbox" id="htmlnews" value="htmlnews" name="user_htmlletter"><label>HTML News</label><br>
-                <input type="checkbox" id="cssnews" value="cssnews" name="user_cssletter"><label>CSS News</label><br>
-                <input type="checkbox" id="jsnews" value="jsnews" name="user_jsletter"><label>JavaScript News</label>
+                <input type="checkbox" id="htmlnews" value="htmlnews" name="user_htmlletter"><label for="htmlnews">HTML News</label><br>
+                <input type="checkbox" id="cssnews" value="cssnews" name="user_cssletter"><label for="cssnews">CSS News</label><br>
+                <input type="checkbox" id="jsnews" value="jsnews" name="user_jsletter"><label for="jsnews">JavaScript News</label>
 
                 <p>Newsletter format</p>
-                <input type="radio" id="html" value="html" name="user_format"><label>HTML</label><br>
-                <input type="radio" id="plain" value="plain" name="user_format"><label>Plain text</label>
+                <input type="radio" id="html" value="html" name="user_format"><label for="html">HTML</label><br>
+                <input type="radio" id="plain" value="plain" name="user_format"><label for="plain">Plain text</label>
 
+                
             </fieldset>
-
-            <p>Other topics you'd like to hear about</p>
-            <textarea></textarea>
-
+            
+            <div class="messagearea">
+            <label for="otopics">Other topics you'd like to hear about</label><br>
+            </div>
+            <textarea id="otopics" name="user_otopics"></textarea>
+            
 
 
 
